@@ -1,7 +1,9 @@
+
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Gabriel Hurtado
+ * May 11th, 2018
+ * Wrd game, it is a game that displays certain sentences already names, in this
+ * case only with a new modification within the remove section.
  */
 
 package wordgame;
@@ -239,25 +241,49 @@ public class WordGameFrame extends javax.swing.JFrame {
 
     private void removeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeButtonActionPerformed
         // Remove the last element from the end of each of the Arrays.
-        names.remove(names.size()-1);
-        verbs.remove(verbs.size()-1);
-        adverbs.remove(adverbs.size()-1);
-        nouns.remove(nouns.size()-1);
-        adjectives.remove(adjectives.size()-1);
+        // using new methods created within the verbInput: 
+        
+       removeName();
+       removeVerbs();
+       removeNouns();
+       removeAdverbs();
+       removeAdjectives();
+      
 
         // These trace statements have been added to testing purposes.
-        System.out.println("Names: " + names);
-        System.out.println("Verbs: " + verbs);
-        System.out.println("Adverbs: " + adverbs);
-        System.out.println("Nouns: " + nouns);
-        System.out.println("Adjectives: " + adjectives);
-        System.out.println("\n");
+        //System.out.println("Names: " + names);
+        //System.out.println("Verbs: " + verbs);
+        //System.out.println("Adverbs: " + adverbs);
+        //System.out.println("Nouns: " + nouns);
+        //System.out.println("Adjectives: " + adjectives);
+        //System.out.println("\n");
     }//GEN-LAST:event_removeButtonActionPerformed
 
     private void verbInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verbInputActionPerformed
         // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_verbInputActionPerformed
-
+    private void removeName(){
+        names.remove(names.size()-1); 
+        }
+    
+     private void  removeVerbs(){
+        names.remove(names.size()-1); 
+     }
+     
+     private void removeNouns(){
+        names.remove(names.size()-1); 
+        }
+     
+     private void removeAdverbs(){
+        names.remove(names.size()-1); 
+        }
+     
+     private void removeAdjectives(){
+        names.remove(names.size()-1); 
+        }
+     
     /**
      * @param args the command line arguments
      */
